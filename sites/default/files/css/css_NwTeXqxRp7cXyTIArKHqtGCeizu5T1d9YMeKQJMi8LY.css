@@ -1,0 +1,4 @@
+#views-slideshow-form-wrapper .form-item.dependent-options{padding-left:5px;}#views-slideshow-form-wrapper .vs-dependent{padding-left:30px;}
+span.ext{background:url(/sites/all/modules/extlink/extlink.png) right center no-repeat;padding-right:12px;}span.mailto{background:url(/sites/all/modules/extlink/mailto.png) right center no-repeat;padding-right:12px;}@media print{span.ext,span.mailto{display:none;padding:0;}}
+div.image-preview{float:left;padding:0 10px 10px 0;}div.image-widget-data{float:left;}div.image-widget-data input.text-field{width:auto;}
+div.cke_dialog_ui_input_text #autocomplete li.selected *{cursor:default;color:#fff;}input.cke_dialog_ui_input_text.form-autocomplete{min-height:16px;}div.cke_dialog_ui_input_text #autocomplete{max-height:100%;overflow-y:auto;}
