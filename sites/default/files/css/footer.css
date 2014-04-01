@@ -1,0 +1,88 @@
+/*@media all and (max-width: 499px) {}
+@media all and (max-width: 739px) {}
+@media all and (max-width: 979px) {}
+@media all and (max-width: 1220px) {}
+@media all and (min-width: 740px) and (min-device-width:740px),(max-device-width:800px) and (min-width:740px) and (orientation:landscape) {}
+@media all and (min-width: 980px) and (min-device-width:980px),all and (max-device-width:1024px) and (min-width:1024px) and (orientation:landscape) {}*/
+/*
+.myElement {
+  @media @tablet { padding: 20px; }
+  @media @desktop { padding: 30px; }
+}*/
+.global-footer {
+  background: none no-repeat scroll 0 0 #ffffff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: .786em;
+  padding: 0 0 1em;
+}
+.global-footer .logo {
+  width: 90px;
+  margin: 10px 10px 20px;
+  float: left;
+}
+.global-footer .footer-links {
+  list-style: none;
+  margin: 0;
+}
+.global-footer .footer-links a {
+  color: #333;
+  display: block;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.global-footer .footer-links a:hover {
+  background-color: #f2f2f2;
+}
+.global-footer .disclaimer {
+  margin-left: 10px;
+}
+.global-footer .social-media-list {
+  list-style: none;
+  margin: 0;
+}
+.global-footer .social-media-list li:first-child .icon {
+  margin-left: 10px;
+}
+.global-footer .social-media-list .icon {
+  display: block;
+  height: 40px;
+  padding: 0;
+  background-image: url(/sites/all/themes/mcgrawhill/images/social-icons.png);
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  margin: 1.5em 0 0 1.5em;
+  width: 40px;
+}
+.global-footer .social-media-list .icon.facebook {
+  background-position: -43px 0;
+}
+.global-footer .social-media-list .icon.facebook:hover {
+  background-position: 0 0;
+}
+.global-footer .social-media-list .icon.twitter {
+  background-position: -43px -45px;
+}
+.global-footer .social-media-list .icon.twitter:hover {
+  background-position: 0 -45px;
+}
+.global-footer .social-media-list .icon.youtube {
+  background-position: -43px -136px;
+}
+.global-footer .social-media-list .icon.youtube:hover {
+  background-position: 0 -136px;
+}
+.global-footer .social-media-list .icon.linkedin {
+  background-position: -43px 0;
+}
+@media all and (min-width: 740px) {
+  .global-footer .disclaimer {
+    padding-top: 88px;
+  }
+  .global-footer .social-media-list li:first-child .icon {
+    margin-left: 1.5em;
+  }
+}
