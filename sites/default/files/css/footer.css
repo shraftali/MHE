@@ -16,20 +16,47 @@
   font-size: .786em;
   padding: 0 0 1em;
 }
+.global-footer .search-box {
+  text-align: right;
+  padding-bottom: 20px;
+  margin: 0 10px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.global-footer .search-box form {
+  border: 1px solid #f38020;
+  padding-left: 20px;
+}
+.global-footer .search-box .search-query {
+  width: 78.888889%;
+  font-size: 2em;
+  border: 1px solid #fff;
+  border-radius: 0;
+  box-shadow: none;
+  float: left;
+  margin-top: 15px;
+  padding: 0 0 5px 0;
+}
+.global-footer .search-box .btn-search {
+  background-color: #f38020;
+  height: 52px;
+  width: 52px;
+  border: 0;
+}
 .global-footer .logo {
   width: 90px;
-  margin: 10px 10px 20px;
+  margin: 0 0 20px 10px;
   float: left;
 }
 .global-footer .footer-links {
   list-style: none;
   margin: 0;
+  float: left;
 }
 .global-footer .footer-links a {
   color: #333;
   display: block;
   font-weight: bold;
-  padding-top: 10px;
+  padding: 5px 10px 5px;
 }
 .global-footer .footer-links a:hover {
   background-color: #f2f2f2;
@@ -79,10 +106,18 @@
   background-position: -43px 0;
 }
 @media all and (min-width: 740px) {
+  .global-footer .search-box .search-query {
+    width: 88.823529%;
+  }
   .global-footer .disclaimer {
     padding-top: 88px;
   }
   .global-footer .social-media-list li:first-child .icon {
     margin-left: 1.5em;
+  }
+}
+@media all and (min-width: 980px) {
+  .global-footer .search-box .search-query {
+    width: 91.73913%;
   }
 }

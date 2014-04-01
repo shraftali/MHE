@@ -19,19 +19,48 @@
 	font-family: Arial,sans-serif;
 	font-size: .786em;
 	padding: 0 0 1em;
+    //Search Box starts here - Footer section B
+    .search-box{
+        text-align: right;
+        padding-bottom: 20px;
+        margin: 0 10px 20px;
+        border-bottom: 1px solid #f0f0f0;
+        form{
+            border:1px solid #f38020;
+            padding-left:20px;
+        }
+        .search-query{
+            width: 78.888889%;
+            font-size: 2em;
+            border:1px solid #fff;
+            border-radius: 0;
+            box-shadow: none;
+            float:left;
+            margin-top: 15px;
+            padding: 0 0 5px 0;
+        }
+        .btn-search{
+            background-color: #f38020;
+            height: 52px;
+            width: 52px;
+            border: 0;
+        }
+    }
+    //Footer Section D
 	.logo{
 		width:90px;
-        margin:10px 10px 20px;
+        margin:0 0 20px 10px;
         float: left;
 	}
     .footer-links{
         list-style: none;
         margin:0;
+        float: left;
         a{
             color: #333;
             display: block;
             font-weight: bold;
-            padding-top: 10px;
+            padding: 5px 10px 5px;
             &:hover{
                 background-color: #f2f2f2;
             }
@@ -90,6 +119,11 @@
 }
 @media @tablet { 
     .global-footer{ 
+        .search-box{
+          .search-query{
+            width:88.823529%;
+          }  
+        }
         .disclaimer{
             padding-top: 88px;
         }
@@ -104,6 +138,10 @@
 }
 @media @desktop { 
     .global-footer{ 
-        
+        .search-box{
+          .search-query{
+            width:91.73913%;
+          }  
+        }
     }
 }

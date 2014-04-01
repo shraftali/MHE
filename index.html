@@ -85,8 +85,16 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   <section class="container-12">
       <!-- Drop Down Links -->
     </section>
-    <section class="container-12">
-      <!-- Search -->
+    <section class="container-12 clearfix">
+      <div class="grid-12 clearfix">
+        <!-- Search -->
+        <div class="search-box">
+          <!--<input id="searchPageUrl" name="searchPageUrl" type="hidden" value="/en-us/mypanera/search.html">-->
+          <form id="search-form" action="search.html">
+              <input id="search-query" class="search-query" name="search" placeholder="What would you like to learn today?" type="text"><button class="btn-search" id="search-button" title="Search" type="submit"></button>
+          </form>
+        </div>
+      </div>  
     </section>
     <section class="container-12">
       <!-- Navigation -->
