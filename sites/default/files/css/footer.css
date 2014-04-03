@@ -86,15 +86,14 @@
 .global-footer .guide-nav-wrap .guide-nav .channel .title .carrot {
   float: right;
 }
+.global-footer .guide-nav-wrap .guide-nav .channel .title.open {
+  display: none;
+}
 .global-footer .guide-nav-wrap .guide-nav .channel .child {
   text-transform: lowercase;
   background-color: #e6e7e2;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
   display: none;
+  position: relative;
 }
 .global-footer .guide-nav-wrap .guide-nav .channel .child .trigger .reveal {
   display: block;
@@ -112,16 +111,18 @@
   display: none;
 }
 .global-footer .guide-nav-wrap .guide-nav .channel .child .content {
-  margin-left: 80px;
-  margin-top: 20px;
+  padding-left: 50px;
+  padding-top: 25px;
+  width: 84%;
 }
 .global-footer .guide-nav-wrap .guide-nav .channel .child .content .subtitle {
   color: #30494d;
-  font-size: 2.5em;
+  font-size: 2em;
   text-transform: uppercase;
   border-bottom: 1px solid #c0c0be;
   padding-bottom: 5px;
   line-height: 1.5em;
+  position: relative;
 }
 .global-footer .guide-nav-wrap .guide-nav .channel .child .content .subtitle:after {
   content: '';
@@ -131,14 +132,13 @@
   height: 10px;
   position: absolute;
   right: 0;
-  bottom: -6px;
+  bottom: -7px;
 }
 .global-footer .guide-nav-wrap .guide-nav .channel .child .content .links {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .global-footer .guide-nav-wrap .guide-nav .channel .child .content .links li {
-  width: 50%;
-  float: left;
   font-size: 1.3em;
 }
 .global-footer .guide-nav-wrap .guide-nav > :last-child {
@@ -222,6 +222,19 @@
     width: 48.529412%;
     margin-right: 20px;
   }
+  .global-footer .guide-nav-wrap .guide-nav .channel .title.open {
+    display: block;
+  }
+  .global-footer .guide-nav-wrap .guide-nav .channel .title .carrot {
+    display: none;
+  }
+  .global-footer .guide-nav-wrap .guide-nav .channel .child {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
   .global-footer .guide-nav-wrap .guide-nav .channel .child .trigger .reveal {
     display: none;
   }
@@ -235,8 +248,13 @@
     display: block;
   }
   .global-footer .guide-nav-wrap .guide-nav .channel .child .content {
-    margin-left: 200px;
+    margin-left: 150px;
     margin-top: 50px;
+    width: 60%;
+  }
+  .global-footer .guide-nav-wrap .guide-nav .channel .child .content .links li {
+    width: 50%;
+    float: left;
   }
   .global-footer .guide-nav-wrap .guide-nav > :nth-child(2),
   .global-footer .guide-nav-wrap .guide-nav > :nth-child(4),
@@ -261,8 +279,18 @@
   .global-footer .guide-nav-wrap .guide-nav .channel {
     width: 31.847826%;
   }
+  .global-footer .guide-nav-wrap .guide-nav .channel .child .content {
+    width: 74%;
+  }
+  .global-footer .guide-nav-wrap .guide-nav .channel .child .content .subtitle {
+    width: 38%;
+    float: left;
+    margin-right: 2%;
+  }
   .global-footer .guide-nav-wrap .guide-nav .channel .child .content .links {
-    margin-top: 30px;
+    width: 60%;
+    margin-top: 20px;
+    float: left;
   }
   .global-footer .guide-nav-wrap .guide-nav > :nth-child(2),
   .global-footer .guide-nav-wrap .guide-nav > :nth-child(4) {
