@@ -12,6 +12,12 @@
   @media @tablet { padding: 20px; }
   @media @desktop { padding: 30px; }
 }*/
+@col-prim:#de2516;
+@col-sec:#e6e7e2;
+@col-text:#30494d;
+@col-link:#30494d;
+@col-link-hover:#de2516;
+@col-border:#c0c0be;
 
 .global-footer{
 	background: none no-repeat scroll 0 0 #fff;
@@ -19,14 +25,37 @@
 	font-family: Arial,sans-serif;
 	font-size: .786em;
 	padding: 0 0 1em;
-    //Search Box starts here - Footer section B
+    ul{
+        list-style: none;
+    }
+    // Dropdpwn Navigation start here - Footer Section A
+    .footer-drop-nav{
+        margin:0 10px 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f0f0f0;
+        span{
+            width: 18%;
+            float: left;
+            padding-right: 2.2%;
+        }
+        span:last-child{
+            padding-right: 0;
+        }
+        select{
+            width: 100%;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+    }
+    
+    //Search Box starts here - Footer Section B
     .search-box{
         text-align: right;
         padding-bottom: 20px;
         margin: 0 10px 20px;
-        border-bottom: 1px solid #f0f0f0;
+        border-bottom: 1px solid @col-border;
         form{
-            border:1px solid #f38020;
+            border:2px solid @col-border;
             padding-left:20px;
         }
         .search-query{
@@ -38,84 +67,179 @@
             float:left;
             margin-top: 15px;
             padding: 0 0 5px 0;
+            color: @col-text;
         }
         .btn-search{
-            background-color: #f38020;
+            background-color: @col-prim;
             height: 52px;
             width: 52px;
             border: 0;
         }
     }
-    //Footer Section D
-	.logo{
-		width:90px;
-        margin:0 0 20px 10px;
-        float: left;
-	}
-    .footer-links{
-        list-style: none;
-        margin:0;
-        float: left;
-        a{
-            color: #333;
-            display: block;
-            font-weight: bold;
-            padding: 5px 10px 5px;
-            &:hover{
-                background-color: #f2f2f2;
+
+    // Footer Guide Nav - Footer Section C
+    .guide-nav-wrap{
+        position: relative;
+        margin: 0 10px;
+        .guide-nav{
+            margin: 0;
+            .channel{
+                background-color: @col-sec;
+                border-radius: 0 4px 4px 0;
+                margin-bottom: 20px;
+                .title{
+                    height: 50px;
+                    color: @col-text;
+                    text-transform: uppercase;
+                    padding: 25px 10px 0 50px;
+                    font-size: 2em;
+                    .carrot{
+                        float: right;
+                    }
+                }
+                .child{
+                    text-transform: lowercase;
+                    background-color: @col-sec;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left:0;
+                    height: 100%;
+                    display: none;
+                    .trigger{
+                        .reveal{
+                            display: block;
+                            font-size: 20px;
+                            padding: 0 5px;
+                            background-color: red;
+                            cursor: pointer;
+                            float: right;
+                            position: absolute;
+                            top: 20px;
+                            right: 10px;
+                            z-index: 1;
+                        }
+                        .close{
+                            display: none;
+                        }
+                    }
+                    .content{
+                        margin-left: 80px; 
+                        margin-top: 20px;
+                        .subtitle{
+                            color: @col-text;
+                            font-size: 2.5em;
+                            text-transform: uppercase;
+                            border-bottom:1px solid @col-border;
+                            padding-bottom: 5px;
+                            line-height: 1.5em;
+                            &:after{
+                                content: '';
+                                border: 1px solid @col-border;
+                                border-radius: 5px;
+                                width: 10px;
+                                height: 10px;
+                                position: absolute;
+                                right: 0;
+                                bottom: -6px;
+                            }
+                        }
+                        .links{
+                            margin-top: 10px;
+                            li{
+                                width: 50%;
+                                float: left;
+                                font-size: 1.3em;    
+                            }
+
+                        }
+                    }
+                }
+            }
+            >:last-child{
+                margin-bottom: 0;
             }
         }
     }
-    .disclaimer{
-        //need to add some styles when VD is ready
-        margin-left: 10px;
-    }
-	.social-media-list{
-			list-style:none;
+    
+    
+    //Footer Section D
+    .footer-link-nav{
+        border-top:1px solid #f0f0f0;
+        margin-top: 20px;
+        padding-top: 20px;
+        .logo{
+        width:90px;
+        margin:0 0 20px 10px;
+        float: left;
+        }
+        .footer-links{
             margin:0;
-            li:first-child{
-                .icon{
-                margin-left: 10px; 
+            float: left;
+            a{
+                color: @col-link;
+                display: block;
+                font-weight: bold;
+                padding: 5px 10px 5px;
+                &:hover{
+                    background-color: #edebdd;
+                    color: @col-link-hover;
                 }
             }
-		.icon{
-			display: block;
-			height: 40px;
-			padding: 0;
-			width: 40px;
-			background-image: url(/sites/all/themes/mcgrawhill/images/social-icons.png);
-            background-repeat: no-repeat;
-            text-indent: 100%;
-        	white-space: nowrap;
-        	overflow: hidden;
-        	float: left;
-            margin: 1.5em 0 0 1.5em;
-            width: 40px;
+        }
+        .disclaimer{
+            //need to add some styles when VD is ready
+            margin-left: 10px;
+            color: @col-text;
+        }
+        .social-media-list{
+                list-style:none;
+                margin:0;
+                li:first-child{
+                    .icon{
+                    margin-left: 10px; 
+                    }
+                }
+            .icon{
+                display: block;
+                height: 40px;
+                padding: 0;
+                width: 40px;
+                background-image: url(/sites/all/themes/mcgrawhill/images/social-icons.png);
+                background-repeat: no-repeat;
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                float: left;
+                margin: 1.5em 0 0 1.5em;
+                width: 40px;
 
-            &.facebook{
-    		  background-position: -43px 0; 
-    		  &:hover{
-    			      background-position: 0 0;
-    			  }
-    		}
-    		&.twitter{
-    			  background-position: -43px -45px;
-    			  &:hover{
-    			      background-position: 0 -45px;
-    			  }
-    		}
-    		&.youtube{
-    			  background-position: -43px -136px;
-    			  &:hover{
-    			      background-position:0 -136px;
-    			  }
-    		}
-    		&.linkedin{
-    			  background-position: -43px 0; 
-    		}
-		}
-		
-	}
+                &.facebook{
+                  background-position: -43px 0; 
+                  &:hover{
+                          background-position: 0 0;
+                      }
+                }
+                &.twitter{
+                      background-position: -43px -45px;
+                      &:hover{
+                          background-position: 0 -45px;
+                      }
+                }
+                &.youtube{
+                      background-position: -43px -136px;
+                      &:hover{
+                          background-position:0 -136px;
+                      }
+                }
+                &.linkedin{
+                      background-position: -43px 0; 
+                }
+            }
+            
+        }    
+    }
+	
 }
 @media @tablet { 
     .global-footer{ 
@@ -124,6 +248,43 @@
             width:88.823529%;
           }  
         }
+        .guide-nav-wrap{
+            .guide-nav{
+                .channel{
+                    float: left;
+                    width: 48.529412%;
+                    margin-right: 20px;
+                    .child{
+                        .trigger{
+                            .reveal{
+                                display: none;
+                            }
+                            .close{
+                                border: 1px solid @col-prim;
+                                padding: 0 5px;
+                                line-height: 1.5em;
+                                font-size: 1.5em;
+                                margin-top: 5px;
+                                margin-right: 5px;
+                                display: block
+                            }
+                        }
+                        .content{
+                            margin-left: 200px; 
+                            margin-top: 50px;
+                        }
+                    }
+                }    
+                >:nth-child(2), >:nth-child(4), >:last-child{
+                    margin-right: 0;
+                }
+                >:nth-child(5), >:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+        
         .disclaimer{
             padding-top: 88px;
         }
@@ -142,6 +303,29 @@
           .search-query{
             width:91.73913%;
           }  
+        }
+        .guide-nav-wrap{
+            .guide-nav{
+                .channel{
+                    width: 31.847826%;
+                    .child{
+                        .content{
+                            .links{
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+                >:nth-child(2), >:nth-child(4){
+                    margin-right: 20px;
+                }
+                >:nth-child(3), >:last-child{
+                    margin-right: 0px;
+                }
+                >:nth-child(4), >:last-child{
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }
