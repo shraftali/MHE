@@ -1,17 +1,7 @@
-/*@media all and (max-width: 499px) {}
-@media all and (max-width: 739px) {}
-@media all and (max-width: 979px) {}
-@media all and (max-width: 1220px) {}
-@media all and (min-width: 740px) and (min-device-width:740px),(max-device-width:800px) and (min-width:740px) and (orientation:landscape) {}
-@media all and (min-width: 980px) and (min-device-width:980px),all and (max-device-width:1024px) and (min-width:1024px) and (orientation:landscape) {}*/
 
 @tablet: ~"all and (min-width: 740px)";
 @desktop: ~"all and (min-width: 980px)";
-/*
-.myElement {
-  @media @tablet { padding: 20px; }
-  @media @desktop { padding: 30px; }
-}*/
+
 @col-prim:#de2516;
 @col-sec:#e6e7e2;
 @col-text:#30494d;
@@ -27,6 +17,7 @@
 	padding: 0 0 1em;
     ul{
         list-style: none;
+        margin-bottom: 0;
     }
     // Dropdpwn Navigation start here - Footer Section A
     .footer-drop-nav{
@@ -81,12 +72,17 @@
     .guide-nav-wrap{
         position: relative;
         margin: 0 10px;
+
+        border-bottom:1px solid @col-border;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+
         .guide-nav{
-            margin: 0;
+            margin-top: -20px;
             .channel{
                 background-color: @col-sec;
                 border-radius: 0 4px 4px 0;
-                margin-bottom: 20px;
+                margin-top: 20px;
                 .title{
                     height: 50px;
                     color: @col-text;
@@ -156,21 +152,18 @@
                     }
                 }
             }
-            >:last-child{
+            /*>:last-child{
                 margin-bottom: 0;
-            }
+            }*/
         }
     }
     
     
     //Footer Section D
     .footer-link-nav{
-        border-top:1px solid #f0f0f0;
-        margin-top: 20px;
-        padding-top: 20px;
         .logo{
-        width:90px;
-        margin:0 0 20px 10px;
+        width:64px;
+        margin:0 10px 20px 10px;
         float: left;
         }
         .footer-links{
@@ -180,7 +173,7 @@
                 color: @col-link;
                 display: block;
                 font-weight: bold;
-                padding: 5px 10px 5px;
+                padding: 5px 5px 5px;
                 &:hover{
                     background-color: #edebdd;
                     color: @col-link-hover;
@@ -189,53 +182,52 @@
         }
         .disclaimer{
             //need to add some styles when VD is ready
-            margin-left: 10px;
             color: @col-text;
         }
         .social-media-list{
                 list-style:none;
-                margin:0;
-                li:first-child{
-                    .icon{
-                    margin-left: 10px; 
+                margin:0 0 0 -10px;
+                overflow: hidden;
+                li{
+                    float: left;
+                    margin: 0 0 15px 1.5em;
+
+                }
+                
+                .icon{
+                    display: block;
+                    height: 40px;
+                    padding: 0;
+                    width: 40px;
+                    background-image: url(/sites/all/themes/mcgrawhill/images/social-icons.png);
+                    background-repeat: no-repeat;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 40px;
+
+                    &.facebook{
+                      background-position: -43px 0; 
+                      &:hover{
+                              background-position: 0 0;
+                          }
+                    }
+                    &.twitter{
+                          background-position: -43px -45px;
+                          &:hover{
+                              background-position: 0 -45px;
+                          }
+                    }
+                    &.youtube{
+                          background-position: -43px -136px;
+                          &:hover{
+                              background-position:0 -136px;
+                          }
+                    }
+                    &.linkedin{
+                          background-position: -43px 0; 
                     }
                 }
-            .icon{
-                display: block;
-                height: 40px;
-                padding: 0;
-                width: 40px;
-                background-image: url(/sites/all/themes/mcgrawhill/images/social-icons.png);
-                background-repeat: no-repeat;
-                text-indent: 100%;
-                white-space: nowrap;
-                overflow: hidden;
-                float: left;
-                margin: 1.5em 0 0 1.5em;
-                width: 40px;
-
-                &.facebook{
-                  background-position: -43px 0; 
-                  &:hover{
-                          background-position: 0 0;
-                      }
-                }
-                &.twitter{
-                      background-position: -43px -45px;
-                      &:hover{
-                          background-position: 0 -45px;
-                      }
-                }
-                &.youtube{
-                      background-position: -43px -136px;
-                      &:hover{
-                          background-position:0 -136px;
-                      }
-                }
-                &.linkedin{
-                      background-position: -43px 0; 
-                }
-            }
             
         }    
     }
@@ -250,10 +242,11 @@
         }
         .guide-nav-wrap{
             .guide-nav{
+                margin: -20px -20px 0;
                 .channel{
                     float: left;
-                    width: 48.529412%;
-                    margin-right: 20px;
+                    width: 45.694444%;
+                    margin-left: 20px;
                     .title{
                         &.open{
                             display: block;
@@ -295,27 +288,19 @@
                             }
                         }
                     }
-                }    
-                >:nth-child(2), >:nth-child(4), >:last-child{
-                    margin-right: 0;
-                }
-                >:nth-child(5), >:last-child{
-                    margin-bottom: 0;
-                }
+                }  
+                
             }
         }
-        
-        
-        .disclaimer{
-            padding-top: 88px;
-        }
-        .social-media-list{
-            li:first-child{
-                .icon{
-                margin-left: 1.5em; 
-                }
+        .footer-link-nav{
+            .disclaimer{
+                padding-top: 67px;
             }
-        }    
+            .social-media-list{
+                margin:0 0 20px -20px;
+            }    
+        }
+            
     }
 }
 @media @desktop { 
@@ -328,7 +313,7 @@
         .guide-nav-wrap{
             .guide-nav{
                 .channel{
-                    width: 31.847826%;
+                    width: 30.531915%;
                     .child{
                         .content{
                             width: 74%;
@@ -345,16 +330,15 @@
                         }
                     }
                 }
-                >:nth-child(2), >:nth-child(4){
-                    margin-right: 20px;
-                }
-                >:nth-child(3), >:last-child{
-                    margin-right: 0px;
-                }
-                >:nth-child(4), >:last-child{
-                    margin-bottom: 0;
-                }
             }
+        }
+        .footer-link-nav{
+            .disclaimer{
+                padding-top: 83px;
+            }
+            .social-media-list{
+                margin-top:56px;
+            }    
         }
     }
 }
