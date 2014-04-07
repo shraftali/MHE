@@ -11,21 +11,23 @@
 }
 .global-footer .footer-drop-nav {
   margin: 0 10px 20px;
-  padding-bottom: 20px;
+  border-bottom: 1px solid #c0c0be;
+}
+.global-footer .footer-drop-nav .dk_container {
+  margin-right: 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.global-footer .footer-drop-nav .dk_toggle {
+  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+}
+.global-footer .footer-drop-nav .dk_options_inner {
   border-bottom: 1px solid #f0f0f0;
 }
-.global-footer .footer-drop-nav span {
-  width: 18%;
-  float: left;
-  padding-right: 2.2%;
-}
-.global-footer .footer-drop-nav span:last-child {
-  padding-right: 0;
-}
-.global-footer .footer-drop-nav select {
+.global-footer .footer-drop-nav .dk_options {
   width: 100%;
-  margin-bottom: 0;
-  text-transform: uppercase;
 }
 .global-footer .search-box {
   text-align: right;
@@ -46,7 +48,7 @@
   float: left;
   margin-top: 15px;
   padding: 0 0 5px 0;
-  color: #30494d;
+  color: #32494d;
 }
 .global-footer .search-box .btn-search {
   background-color: #de2516;
@@ -74,7 +76,7 @@
 }
 .global-footer .guide-nav-wrap .guide-nav .channel .title {
   height: 50px;
-  color: #30494d;
+  color: #32494d;
   text-transform: uppercase;
   padding: 25px 10px 0 50px;
   font-size: 2em;
@@ -112,7 +114,7 @@
   width: 84%;
 }
 .global-footer .guide-nav-wrap .guide-nav .channel .child .content .subtitle {
-  color: #30494d;
+  color: #32494d;
   font-size: 2em;
   text-transform: uppercase;
   border-bottom: 1px solid #c0c0be;
@@ -147,7 +149,7 @@
   float: left;
 }
 .global-footer .footer-link-nav .footer-links a {
-  color: #30494d;
+  color: #32494d;
   display: block;
   font-weight: bold;
   padding: 5px 5px 5px;
@@ -157,7 +159,7 @@
   color: #de2516;
 }
 .global-footer .footer-link-nav .disclaimer {
-  color: #30494d;
+  color: #32494d;
 }
 .global-footer .footer-link-nav .social-media-list {
   list-style: none;
@@ -201,6 +203,10 @@
   background-position: -43px 0;
 }
 @media all and (min-width: 740px) {
+  .global-footer .footer-drop-nav .dk_container {
+    float: left;
+    width: auto;
+  }
   .global-footer .search-box .search-query {
     width: 88.823529%;
   }
@@ -235,7 +241,8 @@
     font-size: 1.5em;
     margin-top: 5px;
     margin-right: 5px;
-    display: block;
+    float: right;
+    display: inline-block;
   }
   .global-footer .guide-nav-wrap .guide-nav .channel .child .content {
     margin-left: 150px;

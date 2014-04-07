@@ -4,10 +4,11 @@
 
 @col-prim:#de2516;
 @col-sec:#e6e7e2;
-@col-text:#30494d;
-@col-link:#30494d;
+@col-text:#32494d;
+@col-link:#32494d;
 @col-link-hover:#de2516;
 @col-border:#c0c0be;
+@bg-select:#edebdc;
 
 .global-footer{
 	background: none no-repeat scroll 0 0 #fff;
@@ -22,20 +23,22 @@
     // Dropdpwn Navigation start here - Footer Section A
     .footer-drop-nav{
         margin:0 10px 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #f0f0f0;
-        span{
-            width: 18%;
-            float: left;
-            padding-right: 2.2%;
-        }
-        span:last-child{
-            padding-right: 0;
-        }
-        select{
+        border-bottom: 1px solid @col-border;
+        .dk_container{
+            margin-right: 30px;
+            box-sizing:border-box;
             width: 100%;
-            margin-bottom: 0;
+        }
+        .dk_toggle{
             text-transform: uppercase;
+            width: 100%;
+            box-sizing:border-box;
+        }
+        .dk_options_inner{
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .dk_options{
+         width: 100%; 
         }
     }
     
@@ -234,7 +237,13 @@
 	
 }
 @media @tablet { 
-    .global-footer{ 
+    .global-footer{
+    .footer-drop-nav{
+        .dk_container{
+            float: left;
+            width: auto;
+        } 
+    }
         .search-box{
           .search-query{
             width:88.823529%;
@@ -272,7 +281,8 @@
                                 font-size: 1.5em;
                                 margin-top: 5px;
                                 margin-right: 5px;
-                                display: block;
+                                float: right;
+                                display: inline-block;
                             }
                         }
                         .content{

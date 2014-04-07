@@ -20,9 +20,9 @@
 }
 /*]]>*/-->
 </style>
-<link type="text/css" rel="stylesheet" href="sites/default/files/css/css_hq3O94ABGDVuPWdSyNZJ4m48TkYZSi1xoUzRKqHWhoA.css" media="all" />
 <link type="text/css" rel="stylesheet" href="sites/default/files/css/css_GdakBAh3JZehgbyj4dMF0p666ZR80uhQsrmHwIL2xEg.css" media="screen" />
 <link type="text/css" rel="stylesheet" href="sites/default/files/css/css_yuA9PJRJUQCvrALwKIIQYVgLCKcVI0iYlabcq8xVHS8.css" media="all" />
+<link rel="stylesheet" type="text/css" href="sites/default/files/css/dropkick.css" media="all">
 <link rel="stylesheet" type="text/css" href="sites/default/files/css/footer.css" media="all">
 
 <!--[if (lt IE 9)&(!IEMobile)]>
@@ -34,42 +34,20 @@
 <link type="text/css" rel="stylesheet" href="sites/default/files/css/css_CNOTaFpRArpl7FygHC7JLNNQ0fj8UVZ-3Hpoy8bvLzE.css" media="all" />
 <!--<![endif]-->
 <script type="text/javascript" src="sites/default/files/js/js_YG98FuAkznGpfUVD7la3EObWLhNr4zOIqZcdXzZxHVI.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
 <script type="text/javascript" src="sites/default/files/js/js_c8JC4ZSP4K6OGCeiQjLVy-HyxjcolqO-i5-kZUEXq5w.js"></script>
 <script type="text/javascript" src="sites/default/files/js/js_77Ctke5y0-K1_K8BD7dZskl-3sfD_t8MJKLSguEkuKg.js"></script>
-<script type="text/javascript" src="sites/default/files/js/js_wIk1HB8uu0Ai59UTqbo5fNhfEDy99Y-nvD-YSOdImIA.js"></script>
+<script type="text/javascript" src="sites/default/files/js/jquery.dropkick-min.js"></script>
+<script>
+jQuery(function(){
+  jQuery('.custom-dropdwn').dropkick();
+});
+</script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-30105769-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
 //--><!]]>
 </script>
 <script type="text/javascript" src="sites/default/files/js/js_IIwMRo5tjw6TFNTHe-9_ToYZqC_1p5cWuKI7Z9Uc9M8.js"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery(function(){
-jQuery('#superfish-2').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
-delay: 1,
-animation: {opacity:'show',height:'show'},
-speed: 1,
-autoArrows: false,
-dropShadows: false,
-disableHI: true});
-});
-//--><!]]>
-</script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery(function(){
-jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
-delay: 1,
-animation: {opacity:'show'},
-speed: 1,
-autoArrows: false,
-dropShadows: false,
-disableHI: true}).find('ul').bgIframe({opacity:false});
-});
-//--><!]]>
-</script>
 <script type="text/javascript" src="sites/default/files/js/js_diWL3aQY3h6RRBatVIE0RJfaXsBie-hoJ861ArHzvB0.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
@@ -86,37 +64,30 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   <section class="container-12">
       <!-- Drop Down Links Nav -->
       <div class="grid-12 clearfix">
+        
+      </div>
+      <div class="grid-12 clearfix">
         <div class="footer-drop-nav clearfix">
-          <span>
-            <select name="" id="">
+          <select name="prog_info" id="" class="custom-dropdwn">
               <option value="item1">Program info</option>
               <option value="item2">item2</option>
             </select>
-          </span>
-          <span>
-          <select name="" id="">
+          <select name="teacher_room_resou" id="" class="custom-dropdwn">
               <option value="item1">Teacher &amp; Classroom Resources</option>
               <option value="item2">item2</option>
           </select>
-          </span>
-          <span>
-            <select name="" id="">
+            <select name="school_district_resou" id="" class="custom-dropdwn">
               <option value="item1">School &amp; District Resources</option>
               <option value="item2">item2</option>
             </select>
-          </span>
-          <span>
-            <select name="" id="">
+            <select name="other1" id="" class="custom-dropdwn">
               <option value="item1">item1</option>
               <option value="item2">item2</option>
             </select>
-          </span>
-          <span>
-            <select name="" id="">
+            <select name="other2" id="" class="custom-dropdwn">
               <option value="item1">item1</option>
               <option value="item2">item2</option>
             </select>
-          </span>
         </div>
       </div>
     </section>
