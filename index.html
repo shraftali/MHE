@@ -69,7 +69,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
       </div>
       <div class="grid-12 clearfix">
         <div class="footer-drop-nav clearfix">
-          <select name="prog_info" id="" class="custom-dropdwn">
+          <div class="inner-wrap">
+            <select name="prog_info" id="" class="custom-dropdwn">
               <option value="item1">Program info</option>
               <option value="item2">item2</option>
             </select>
@@ -81,14 +82,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
               <option value="item1">School &amp; District Resources</option>
               <option value="item2">item2</option>
             </select>
-            <select name="other1" id="" class="custom-dropdwn">
-              <option value="item1">item1</option>
-              <option value="item2">item2</option>
-            </select>
-            <!--<select name="other2" id="" class="custom-dropdwn">
-              <option value="item1">item1</option>
-              <option value="item2">item2</option>
-            </select>-->
+          </div>
         </div>
       </div>
     </section>
@@ -114,7 +108,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
               <span class="trigger">
                 <span class="close">X</span>
               </span>
-              <div class="content">
+              <div class="content clearfix">
                   <ul class="links">
                     <li><a href="">item1</a></li>
                     <li><a href="">item2</a></li>
@@ -130,7 +124,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
               <span class="trigger">
                 <span class="close">X</span>
               </span>
-              <div class="content">
+              <div class="content clearfix">
                   <ul class="links">
                     <li><a href="">item1</a></li>
                     <li><a href="">item2</a></li>
@@ -146,7 +140,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
               <span class="trigger">
                 <span class="close">X</span>
               </span>
-              <div class="content">
+              <div class="content clearfix">
                   <ul class="links">
                     <li><a href="">item1</a></li>
                     <li><a href="">item2</a></li>
@@ -162,7 +156,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
               <span class="trigger">
                 <span class="close">X</span>
               </span>
-              <div class="content">
+              <div class="content clearfix">
                   <ul class="links">
                     <li><a href="">item1</a></li>
                     <li><a href="">item2</a></li>
@@ -178,7 +172,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
               <span class="trigger">
                 <span class="close">X</span>
               </span>
-              <div class="content">
+              <div class="content clearfix">
                   <ul class="links">
                     <li><a href="">item1</a></li>
                     <li><a href="">item2</a></li>
@@ -194,7 +188,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
               <span class="trigger">
                 <span class="close">X</span>
               </span>
-              <div class="content">
+              <div class="content clearfix">
                 <ul class="links">
                   <li><a href="">item1</a></li>
                   <li><a href="">item2</a></li>
@@ -212,15 +206,20 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
       <div class="footer-link-nav">
           <div class="grid-4 push-8 clearfix">
             <!-- Social media Icons -->
-            <ul class="social-media-list">
-              <li><a class="icon facebook" href="http://www.facebook.com/McGrawHillEducation" target="_blank">Facebook</a></li>
-              <li><a class="icon twitter" href="http://twitter.com/MHEducation" target="_blank">Twitter</a></li>
-              <li><a class="icon youtube" href="http://www.youtube.com/user/MHEducation" target="_blank">YouTube</a></li>
-              <li><a class="icon twitter" href="http://twitter.com/MHEducation" target="_blank">Twitter</a></li>
-              <li><a class="icon youtube" href="http://www.youtube.com/user/MHEducation" target="_blank">YouTube</a></li>
+            <ul class="social-media-list clearfix">
+              <li><a class="icon-facebook" href="http://www.facebook.com/McGrawHillEducation" target="_blank" title="Facebook"></a></li>
+              <li><a class="icon-twitter" href="http://twitter.com/MHEducation" target="_blank" title="Twitter"></a></li>
+              <li><a class="icon-instagram" href="#" target="_blank" title="Instagram"></a></li>
+              <li><a class="icon-pinterest" href="#" target="_blank" title="Pinterest"></a></li>
+              <li><a class="icon-youtube" href="http://www.youtube.com/user/MHEducation" target="_blank" title="YouTube"></a></li>
             </ul>
+
+              <!-- Copy Right Disclaimer -->
+              <div class="disclaimer clearfix">
+                &copy; 2014 McGraw-Hill Education. All Rights Reserved.
+              </div> 
           </div>
-          <div class="grid-4 pull-4 clearfix">
+          <div class="grid-8 pull-4 clearfix">
             <!-- Footer Logo/Links -->
            
                <div class="logo">
@@ -231,14 +230,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
                 <li> <a href="/privacy-notice">Privacy &amp; Cookie Notice</a></li>
                 <li> <a href="https://adobeformscentral.com/?f=0nn3qavRoMk8YPDQFyk6Ig" target="_blank">Report Piracy</a></li>
                 <li> <a href="/purchase-order">Purchase Order</a></li>
-              </ul>  
-          </div>
-          <div class="grid-4 pull-4 clearfix">
-            <!-- Copy Right Disclaimer -->
-            <div class="disclaimer">
-              &copy; 2013 McGraw-Hill Education. All Rights Reserved.
-            </div>
-          </div>  
+              </ul> 
+          </div> 
       </div>    
     </section>
 </footer>

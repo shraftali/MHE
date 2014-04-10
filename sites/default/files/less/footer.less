@@ -33,19 +33,17 @@
 
     // Dropdpwn Navigation start here - Footer Section A
     .footer-drop-nav{
-        margin:0 10px 20px;
         border-bottom: 1px solid @col-border-prim;
+        margin-bottom: 20px; 
         .dk_container{
-            margin-right: 30px;
-            box-sizing:border-box;
             width: 100%;
+            font-size: 13px;
+            font:  0.813rem arumsans_ltbold, Arial, sans-serif;
         }
         .dk_toggle{
             text-transform: uppercase;
             width: 100%;
             box-sizing:border-box;
-            font-size: 13px;
-            font:  0.813rem 'ArumSans Lt', Arial, sans-serif;
         }
         .dk_options_inner{
             border-bottom: 1px solid #f0f0f0;
@@ -53,30 +51,19 @@
         }
         .dk_options{
          width: 100%;
-        font-size: 13px;
-        font:  0.813rem 'ArumSans Lt', Arial, sans-serif; 
         }
     }
     
     //Search Box starts here - Footer Section B
     .search-box{
-        margin: 0 10px 20px;
         padding-bottom: 20px;
+        margin-bottom: 20px;
         border-bottom: 1px solid @col-border-prim;
         .box-sizing;
-        /*text-align: right;
-        padding-bottom: 20px;
-        margin: 0 10px 20px;
-        border-bottom: 1px solid @col-border-prim;
-        form{
-            border:2px solid @col-border-prim;
-            padding-left:20px;
-        }*/
         .search-query{
             width: 100%;
-            font-family: 'Vectipede Bk', Arial, sans-serif;
-            font-size: 25px;
-            font-size: 1.563rem;
+            font-size: 16px;
+            font: 1rem vectipedebook, Arial, sans-serif;
             color: @col-text;
             box-shadow: none;
             border:1px solid @col-border-sec;
@@ -99,13 +86,14 @@
             font-size: 40px;
             font-size: 2.5rem;
             font-weight: bold;
+            padding: 0;
+            cursor: pointer;
         }
     }
 
     // Footer Guide Nav - Footer Section C
     .guide-nav-wrap{
         position: relative;
-        margin: 0 10px;
         border-bottom:1px solid @col-border-prim;
         margin-bottom: 20px;
         padding-bottom: 20px;
@@ -122,9 +110,10 @@
                     text-transform: uppercase;
                     padding: 0 10px 0 0;
                     font-size: 15px;
-                    font:  0.938rem 'ArumSans Lt', Arial, sans-serif;
-                    line-height: 58px;
+                    font:  0.938rem arumsans_ltbold, Arial, sans-serif;
+                    line-height: 62px;
                     cursor: pointer;
+                    overflow: hidden;
                     [class^="icon-"], [class*=" icon-"] {
                         font-size: 32px;
                         font-size: 2.000rem;
@@ -152,25 +141,8 @@
                     text-transform: lowercase;
                     background-color: @col-sec;
                     display: none;
-                    .trigger{
-                        .reveal{
-                            display: block;
-                            font-size: 18px;
-                            padding: 0 5px;
-                            cursor: pointer;
-                            float: right;
-                            position: absolute;
-                            top: 25px;
-                            right: 10px;
-                            z-index: 1;
-                            &:after{
-                                content: 'v';
-                                font-family: Arial, sans-serif;
-                            }
-                        }
-                        .close{
-                            display: none;
-                        }
+                    .close{
+                        display: none;
                     }
                     .content{
                         padding:0 8px 0 75px;
@@ -205,6 +177,18 @@
                     }
                 }
                 &.open{
+                    .title{
+                        .carrot{
+
+                               -ms-writing-mode: tb-lr;
+                                -webkit-writing-mode: vertical-lr;
+                                -moz-writing-mode: vertical-lr;
+                                -ms-writing-mode: vertical-lr;
+                                writing-mode: vertical-lr;
+                                margin-top: 26px;
+                                margin-right: -26px;
+                        }
+                    }
                     .child{
                     display: block; 
                    }
@@ -220,78 +204,43 @@
     //Footer Section D
     .footer-link-nav{
         .logo{
-        width:90px;
-        margin:0px 10px 20px 10px;
-        float: left;
+            width:90px;
+            margin:0px 15px 20px 0;
+            float: left;
         }
         .footer-links{
-            margin:-5px 0 0 0;
             float: left;
             a{
                 color: @col-link;
                 display: block;
                 font-weight: bold;
-                padding: 5px 5px 10px;
                 font-size: 12px;
-                font: 0.750rem 'ArumSans exBold', Arial, sans-serif;
+                font: 0.750rem arumsansextrabold, Arial, sans-serif;
+                text-transform: uppercase;
+                margin-bottom: 10px;
                 &:hover{
                     color: @col-link-hover;
                 }
             }
         }
-        .disclaimer{
-            //need to add some styles when VD is ready
-            color: @col-text;
-            display: none;
-            font-size: 12px;
-            font: 0.750rem 'ArumSans exBold', Arial, sans-serif;
-        }
         .social-media-list{
-                list-style:none;
-                margin:0 0 0 -10px;
-                overflow: hidden;
-                li{
-                    float: left;
-                    margin: 0 0 15px 1.5em;
-
+            list-style:none;
+            margin:0 0 0 -15px;
+            overflow: hidden;
+            li{
+                float: left;
+                margin: 0 0 15px 15px;
+                a{
+                    font-size: 36px;
+                    font-size: 2.250rem;
+                    color: @bg-sec;
                 }
-                
-                .icon{
-                    display: block;
-                    height: 40px;
-                    padding: 0;
-                    width: 40px;
-                    background-image: url(/sites/all/themes/mcgrawhill/images/social-icons.png);
-                    background-repeat: no-repeat;
-                    text-indent: 100%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    width: 40px;
-
-                    &.facebook{
-                      background-position: -43px 0; 
-                      &:hover{
-                              background-position: 0 0;
-                          }
-                    }
-                    &.twitter{
-                          background-position: -43px -45px;
-                          &:hover{
-                              background-position: 0 -45px;
-                          }
-                    }
-                    &.youtube{
-                          background-position: -43px -136px;
-                          &:hover{
-                              background-position:0 -136px;
-                          }
-                    }
-                    &.linkedin{
-                          background-position: -43px 0; 
-                    }
-                }
-            
+            }   
+        }
+        .disclaimer{
+            display: none;
         }    
+
     }
 	
 }
@@ -299,15 +248,23 @@
     .global-footer{
         .footer-drop-nav{
             margin-bottom: 30px;
+            .inner-wrap{
+                margin-left: -30px;
+            }
             .dk_container{
                 float: left;
-                width: auto;
-                margin-bottom: 30px
+                margin-bottom: 30px;
+                margin-left: 30px;
+                width: 45.890411%;
             } 
         }
         .search-box{
             padding-bottom: 30px;
             margin-bottom: 30px;
+            .search-query{
+                font-size: 25px;
+                font-size: 1.563rem;
+            }
         }
         .guide-nav-wrap{
             margin-bottom: 30px;
@@ -341,6 +298,8 @@
                         .title{
                             font-size: 25px;
                             font-size: 1.563rem;
+                            overflow: visible;
+                            position: relative;
                             [class^="icon-"], [class*=" icon-"] {
                                 font-size: 96px;
                                 font-size: 6.000rem;
@@ -352,20 +311,18 @@
                         }
                     }
                     .child{
-                        .trigger{
-                            .close{
-                                padding: 0 5px;
-                                line-height: 1.5em;
-                                font-size: 1.5em;
-                                margin-top: 5px;
-                                margin-right: 5px;
-                                float: right;
-                                display: inline-block;
-                                position: absolute;
-                                right: 5px;
-                                top: 5px;
-                                color: #b1b1b0;
-                            }
+                        .close{
+                            line-height: 1.5em;
+                            font-size: 1.5em;
+                            margin-top: 5px;
+                            margin-right: 5px;
+                            float: right;
+                            display: inline-block;
+                            position: absolute;
+                            top: 0;
+                            right: 5px;
+                            color: #b1b1b0;
+                            cursor: pointer;
                         }
                         .content{
                             padding-left:175px; 
@@ -384,22 +341,21 @@
             }
         }
         .footer-link-nav{
-            .logo{
-                width: 69px;
-            }
-            .disclaimer{
-                padding-top: 67px;
-                display: block;
-            }
             .social-media-list{
-                margin:0 0 20px -20px;
-            }    
+                margin:53px 0 20px -35px;
+            } 
+               
         }
             
     }
 }
 @media @desktop { 
     .global-footer{ 
+        .footer-drop-nav{
+            .dk_container{
+                width: 30.206186%;
+            } 
+        }
         .guide-nav-wrap{
             .guide-nav{
                 .channel{
@@ -410,13 +366,13 @@
                             width: 74%;
                             .links{
                                 width: 69%;
-                                margin-top: -35px;
+                                margin-top: -41px;
                                 float: left;
                                 margin-left: 71.5%;
                                 border-top: 0;
-                                &::before {
+                                &:before {
                                     top: 27px;
-                                    left: -26px;
+                                    left: -28px;
                                 }
                                 
                             }
@@ -427,15 +383,16 @@
                         margin-top: 40px;
                         .title{
                             margin-top: 20px;
-                            width: 36%;
+                            width: 50%;
                             position: relative;
                             float: left;
                             &:after{
                                 content: '';
                                 border-bottom: 1px solid @col-border-sec;
-                                width: 100%;
+                                width: 72%;
                                 display: block;
                                 margin-left: 210px;
+                                margin-top: -10px;
                             }
                             [class^="icon-"], [class*=" icon-"] {
                                 margin-right: 50px;
@@ -451,11 +408,28 @@
             .logo{ 
                 width: 90px;
             }
-            .disclaimer{
-                padding-top: 83px;
-            }
+
             .social-media-list{
-                margin-top:56px;
+                margin-bottom: 0;
+                float: right;
+            }
+            .disclaimer{
+                display: block;
+                color: @col-text;
+                font-size: 12px;
+                font: 0.750rem arumsansextrabold, Arial, sans-serif;
+                float: right;
+                padding-top: 2px;
+            }
+            .logo{
+                float: none;
+            }
+            .footer-links{
+                margin-left: -30px;
+                li{
+                    float: left;
+                    margin-left: 30px;
+                }
             }    
         }
     }
