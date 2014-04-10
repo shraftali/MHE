@@ -23,6 +23,7 @@
 <link type="text/css" rel="stylesheet" href="sites/default/files/css/css_GdakBAh3JZehgbyj4dMF0p666ZR80uhQsrmHwIL2xEg.css" media="screen" />
 <link type="text/css" rel="stylesheet" href="sites/default/files/css/css_yuA9PJRJUQCvrALwKIIQYVgLCKcVI0iYlabcq8xVHS8.css" media="all" />
 <link rel="stylesheet" type="text/css" href="sites/default/files/css/dropkick.css" media="all">
+<link rel="stylesheet" type="text/css" href="sites/default/files/fontyourface/font.css" media="all">
 <link rel="stylesheet" type="text/css" href="sites/default/files/css/footer.css" media="all">
 
 <!--[if (lt IE 9)&(!IEMobile)]>
@@ -84,20 +85,20 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
               <option value="item1">item1</option>
               <option value="item2">item2</option>
             </select>
-            <select name="other2" id="" class="custom-dropdwn">
+            <!--<select name="other2" id="" class="custom-dropdwn">
               <option value="item1">item1</option>
               <option value="item2">item2</option>
-            </select>
+            </select>-->
         </div>
       </div>
     </section>
     <section class="container-12 clearfix">
       <div class="grid-12 clearfix">
         <!-- Search -->
-        <div class="search-box">
+        <div class="search-box clearfix">
           <!--<input id="searchPageUrl" name="searchPageUrl" type="hidden" value="/en-us/mypanera/search.html">-->
           <form id="search-form" action="search.html">
-              <input id="search-query" class="search-query" name="search" placeholder="What would you like to learn today?" type="text"><button class="btn-search" id="search-button" title="Search" type="submit"></button>
+              <input id="search-query" class="search-query" name="search" placeholder="What would you like to learn today?" type="text"><button class="btn-search icon-search" id="search-button" title="Search" type="submit"></button>
           </form>
         </div>
       </div>  
@@ -108,16 +109,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
       <div class="guide-nav-wrap">
         <ul class="guide-nav clearfix">
           <li class="channel pre-k clearfix">
-            <div class="title">PRE K-12<span class="carrot">>></span></div>
+            <div class="title"><span class="icon-prek"></span>PRE K-12<span class="carrot"></span></div>
             <div class="child">
               <span class="trigger">
-                <span class="reveal">&gt;</span>
                 <span class="close">X</span>
               </span>
               <div class="content">
-                  <div class="subtitle">
-                    Pre K-12
-                  </div>
                   <ul class="links">
                     <li><a href="">item1</a></li>
                     <li><a href="">item2</a></li>
@@ -128,16 +125,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
             </div>
           </li>
           <li class="channel hig-edu">
-          <div class="title">Higher Education<span class="carrot">>></span></div>
+          <div class="title"><span class="icon-highedu"></span>Higher Education<span class="carrot"></span></div>
             <div class="child">
               <span class="trigger">
-                <span class="reveal">&gt;</span>
                 <span class="close">X</span>
               </span>
               <div class="content">
-                  <div class="subtitle">
-                    Higher Education
-                  </div>
                   <ul class="links">
                     <li><a href="">item1</a></li>
                     <li><a href="">item2</a></li>
@@ -148,16 +141,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
             </div>
           </li>
           <li class="channel assesment">
-          <div class="title">Assessment<span class="carrot">>></span></div>
+          <div class="title"><span class="icon-assessment"></span>Assessment<span class="carrot"></span></div>
             <div class="child">
               <span class="trigger">
-                <span class="reveal">&gt;</span>
                 <span class="close">X</span>
               </span>
               <div class="content">
-                  <div class="subtitle">
-                    Assessment
-                  </div>
                   <ul class="links">
                     <li><a href="">item1</a></li>
                     <li><a href="">item2</a></li>
@@ -168,16 +157,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
             </div>
           </li>
           <li class="channel professional">
-          <div class="title">professional<span class="carrot">>></span></div>
+          <div class="title"><span class="icon-professional"></span>professional<span class="carrot"></span></div>
               <div class="child">
               <span class="trigger">
-                <span class="reveal">&gt;</span>
                 <span class="close">X</span>
               </span>
               <div class="content">
-                  <div class="subtitle">
-                    professional
-                  </div>
                   <ul class="links">
                     <li><a href="">item1</a></li>
                     <li><a href="">item2</a></li>
@@ -188,16 +173,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
             </div>
           </li>
           <li class="channel global">
-          <div class="title">global<span class="carrot">>></span></div>
+          <div class="title"><span class="icon-global"></span>global<span class="carrot"></span></div>
             <div class="child">
               <span class="trigger">
-                <span class="reveal">&gt;</span>
                 <span class="close">X</span>
               </span>
               <div class="content">
-                  <div class="subtitle">
-                    global
-                  </div>
                   <ul class="links">
                     <li><a href="">item1</a></li>
                     <li><a href="">item2</a></li>
@@ -208,22 +189,18 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
             </div>
           </li>
           <li class="channel about">
-          <div class="title">About<span class="carrot">>></span></div>
+          <div class="title"><span class="icon-about"></span>About<span class="carrot"></span></div>
             <div class="child">
               <span class="trigger">
-                <span class="reveal">&gt;</span>
                 <span class="close">X</span>
               </span>
               <div class="content">
-                  <div class="subtitle">
-                    About
-                  </div>
-                  <ul class="links">
-                    <li><a href="">item1</a></li>
-                    <li><a href="">item2</a></li>
-                    <li><a href="">item3</a></li>
-                    <li><a href="">item4</a></li>
-                  </ul>
+                <ul class="links">
+                  <li><a href="">item1</a></li>
+                  <li><a href="">item2</a></li>
+                  <li><a href="">item3</a></li>
+                  <li><a href="">item4</a></li>
+                </ul>
               </div>
             </div>
           </li>
@@ -264,16 +241,24 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
           </div>  
       </div>    
     </section>
-</footer><script type="text/javascript">
+</footer>
+<script type="text/javascript">
 jQuery(function(){
   jQuery('.title').click(function(){
-    jQuery(this).addClass('open').next('.child').show();
-  });
+    if ( jQuery( this ).parent().hasClass('open') ) {
+      //console.log('yes');
+      jQuery(this).parent().removeClass('open');
+    }
+    else{
+      //console.log('no');
+      jQuery(this).parent().addClass('open');
+    }
+   
+})
   jQuery('.trigger').click(function(){
-    jQuery(this).closest('.child').hide()
-    jQuery(this).parent().prev('.title').removeClass('open');
-  });  
-});
+    jQuery(this).parents('.channel').removeClass('open');
+  }); 
+ })
 </script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--

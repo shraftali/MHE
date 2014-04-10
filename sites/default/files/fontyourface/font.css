@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'ArumSans Lt';
+  src: url('fonts/ArumSansBold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/ArumSansBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/ArumSansBold.woff') format('woff'), /* Modern Browsers */
+       url('fonts/ArumSansBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/ArumSansBold.svg#2a1a6ef2bc71596385a8d3802be55098') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'ArumSans exBold';
+  src: url('fonts/ArumSansExtrabold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/ArumSansExtrabold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/ArumSansExtrabold.woff') format('woff'), /* Modern Browsers */
+       url('fonts/ArumSansExtrabold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/ArumSansExtrabold.svg#a1d48ba2e0e365e38e2f0b8448f26bab') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+@font-face {
+  font-family: 'Vectipede Bk';
+  src: url('fonts/VectipedeBk-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/VectipedeBk-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/VectipedeBk-Regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/VectipedeBk-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/VectipedeBk-Regular.svg#42a5d73a0adb767a3427146b1f48f2f2') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+/*------- Icon Font Lib --------*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-v4d4gi');
+	src:url('fonts/icomoon.eot?#iefix-v4d4gi') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-v4d4gi') format('woff'),
+		url('fonts/icomoon.ttf?-v4d4gi') format('truetype'),
+		url('fonts/icomoon.svg?-v4d4gi#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-assessment:before {
+	content: "\e600";
+}
+.icon-highedu:before {
+	content: "\e601";
+}
+.icon-prek:before {
+	content: "\e602";
+}
+.icon-professional:before {
+	content: "\e603";
+}
+.icon-global:before {
+	content: "\e604";
+}
+.icon-about:before {
+	content: "\e605";
+}
+.icon-facebook:before {
+	content: "\e606";
+}
+.icon-twitter:before {
+	content: "\e607";
+}
+.icon-youtube:before {
+	content: "\e608";
+}
+.icon-instagram:before {
+	content: "\e609";
+}
+.icon-pinterest:before {
+	content: "\e60a";
+}
+.icon-arrow:before {
+	content: "\e60b";
+}
+.icon-search:before {
+	content: "\e60c";
+}
+
+
+
+
