@@ -27,8 +27,9 @@
 .dk_toggle {
   /*border: 1px solid #ccc;
   color: #32494d;*/
-  padding: 0 45px 0 10px;
-  line-height: 31px;
+  padding: 1px 45px 0 10px;
+  height: 30px;
+  line-height: 30px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -49,7 +50,7 @@
   right: 0;
   content: "\e60b";
   /*ackground: url(/sites/all/themes/mcgrawhill/images/dropdwn_icon.png) top right no-repeat;*/
-  height: 31px;
+  height: 30px;
   width: 34px;
   font-family: icomoon;
   background-color: #de2516;

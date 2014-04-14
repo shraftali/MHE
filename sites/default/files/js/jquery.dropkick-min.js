@@ -25,7 +25,7 @@
             zero: 48,
             z: 90,
             last: 221
-        }, l = ['<div class="dk_container" id="dk_container_{{ id }}" tabindex="{{ tabindex }}" aria-hidden="true">', '<a class="dk_toggle dk_label">{{ label }}</a>', '<div class="dk_options">', '<ul class="dk_options_inner" role="main" aria-hidden="true">', "</ul>", "</div>", "</div>"].join(""),
+        }, l = ['<div class="dk_container" id="dk_container_{{ id }}" tabindex="{{ tabindex }}">', '<a class="dk_toggle dk_label" aria-hidden="true">{{ label }}</a>', '<div class="dk_options" aria-hidden="true">', '<ul class="dk_options_inner" role="main" aria-hidden="true">', "</ul>", "</div>", "</div>"].join(""),
         c = '<li><a data-dk-dropdown-value="{{ value }}">{{ text }}</a></li>',
         h = {
             startSpeed: 400,

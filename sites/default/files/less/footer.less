@@ -4,7 +4,7 @@
 .box-sizing{
     box-sizing:border-box;
 }
-
+ 
 .global-footer{
 	background: none no-repeat scroll 0 0 #fff;
 	color: #333;
@@ -91,16 +91,16 @@
         }
     }
 
-    // Footer Guide Nav - Footer Section C
-    .guide-nav-wrap{
+    // Footer Tab Nav - Footer Section C
+    .footer-tab-nav-wrap{
         position: relative;
         border-bottom:1px solid @col-border-prim;
         margin-bottom: 20px;
         padding-bottom: 20px;
 
-        .guide-nav{
+        .footer-tab-nav{
             margin-top: -20px;
-            .channel{
+            .category{
                 background-color: @col-sec;
                 border-radius: 0 4px 4px 0;
                 margin-top: 20px;
@@ -127,12 +127,10 @@
                         display: inline-block;
                         float: left;
                     }
-                    .carrot{
+                    &:after{
                         float: right;
-                        &:after{
-                            content: '>';
-                            font-family: 'Vectipede Bk', Arial, sans-serif;
-                        }
+                        content: '>';
+                        font-family: 'Vectipede Bk', Arial, sans-serif;
                     }
                     .box-sizing;
                 }
@@ -141,7 +139,7 @@
                     text-transform: lowercase;
                     background-color: @col-sec;
                     display: none;
-                    .close{
+                    .btn-close{
                         display: none;
                     }
                     .content{
@@ -178,15 +176,15 @@
                 }
                 &.open{
                     .title{
-                        .carrot{
+                        &:after{
 
-                               -ms-writing-mode: tb-lr;
-                                -webkit-writing-mode: vertical-lr;
-                                -moz-writing-mode: vertical-lr;
-                                -ms-writing-mode: vertical-lr;
-                                writing-mode: vertical-lr;
-                                margin-top: 26px;
-                                margin-right: -26px;
+                           -ms-writing-mode: tb-lr;
+                            -webkit-writing-mode: vertical-lr;
+                            -moz-writing-mode: vertical-lr;
+                            -ms-writing-mode: vertical-lr;
+                            writing-mode: vertical-lr;
+                            margin-top: 26px;
+                            margin-right: -26px;
                         }
                     }
                     .child{
@@ -266,23 +264,23 @@
                 font-size: 1.563rem;
             }
         }
-        .guide-nav-wrap{
+        .footer-tab-nav-wrap{
             margin-bottom: 30px;
             padding-bottom: 30px;
                     .box-sizing;
 
-            .guide-nav{
+            .footer-tab-nav{
                 margin: -40px 0 0 -30px;
                 position: relative;
                     .box-sizing;
-                .channel{
+                .category{
                     float: left;
                     width: 45.774648%;
                     margin-top: 40px;
                     margin-left: 30px;
                     .box-sizing;
                     .title{
-                        .carrot{
+                        &:after{
                             display: none;
                         }
                     }
@@ -311,7 +309,7 @@
                         }
                     }
                     .child{
-                        .close{
+                        .btn-close{
                             line-height: 1.5em;
                             font-size: 1.5em;
                             margin-top: 5px;
@@ -356,9 +354,9 @@
                 width: 30.206186%;
             } 
         }
-        .guide-nav-wrap{
-            .guide-nav{
-                .channel{
+        .footer-tab-nav-wrap{
+            .footer-tab-nav{
+                .category{
                     width: 30.105263%;
                     .child{
                         .content{
@@ -393,6 +391,12 @@
                                 display: block;
                                 margin-left: 210px;
                                 margin-top: -10px;
+                                float: none;
+                                -ms-writing-mode: lr-tb;
+                                -webkit-writing-mode: horizontal-tb;
+                                -moz-writing-mode: horizontal-tb;
+                                -ms-writing-mode: horizontal-tb;
+                                writing-mode: horizontal-tb;
                             }
                             [class^="icon-"], [class*=" icon-"] {
                                 margin-right: 50px;
