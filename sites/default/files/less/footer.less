@@ -1,10 +1,11 @@
 
 @import url(var.less);
-
+@import url(dropkick.less);
+@import url(font.less);      
 .box-sizing{
-    box-sizing:border-box;
-}
- 
+    box-sizing:border-box; 
+}     
+  
 .global-footer{
 	background: none no-repeat scroll 0 0 #fff;
 	color: #333;
@@ -30,7 +31,7 @@
     :-ms-input-placeholder {  
        color: @col-text;  
     }
-
+ 
     // Dropdpwn Navigation start here - Footer Section A
     .footer-drop-nav{
         border-bottom: 1px solid @col-border-prim;
@@ -47,7 +48,8 @@
         }
         .dk_options_inner{
             border-bottom: 1px solid #f0f0f0;
-            padding: 10px 0;
+            padding: 0 10px 10px;
+            margin-right: 34px;
         }
         .dk_options{
          width: 100%;
@@ -130,48 +132,39 @@
                     &:after{
                         float: right;
                         content: '>';
-                        font-family: 'Vectipede Bk', Arial, sans-serif;
+                        font-family: vectipede_rgregular, Arial, sans-serif;
+                        margin-right: 5px;
                     }
                     .box-sizing;
-                }
-                .child{
-                    display: none;
-                    text-transform: lowercase;
-                    background-color: @col-sec;
+                } 
+                .link-wrap{
                     display: none;
                     .btn-close{
                         display: none;
                     }
-                    .content{
-                        padding:0 8px 0 75px;
+                    ul{
+                        padding:0 8px 20px 0;
                         .box-sizing;
-                        .subtitle{
-                            display: none;
+                        position: relative;
+                        border-top:1px solid @col-border-sec;
+                        &:before{                                                                                                                                           
+                            content: ''; 
+                            border: 1px solid @col-border-sec;
+                            border-radius: 6px;
+                            width: 11px;
+                            height: 11px;
+                            position: absolute;
+                            right: 0;
+                            top: -7px;
                         }
-
-                        .links{
-                            margin-bottom: 20px;
-                            position: relative;
-                            border-top:1px solid @col-border-sec;
-                            &:before{
-                                content: '';
-                                border: 1px solid @col-border-sec;
-                                border-radius: 6px;
-                                width: 11px;
-                                height: 11px;
-                                position: absolute;
-                                right: 0;
-                                top: -7px;
-                            }
-                            a{
-                                font-size: 13px;
-                                font: 0.813rem 'Vectipede Bk', Arial, sans-serif;
-                                color: @col-link;
-                                margin-top: 20px;
-                                display: inline-block;
-                                text-transform: capitalize;
-                            } 
-                        }
+                        a{
+                            font-size: 13px;
+                            font: 0.813rem vectipede_rgregular, Arial, sans-serif;
+                            color: @col-link;
+                            margin-top: 20px;
+                            display: inline-block;
+                            text-transform: capitalize;
+                        } 
                     }
                 }
                 &.open{
@@ -184,17 +177,17 @@
                             -ms-writing-mode: vertical-lr;
                             writing-mode: vertical-lr;
                             margin-top: 26px;
-                            margin-right: -26px;
+                            margin-right: -20px;
                         }
                     }
-                    .child{
-                    display: block; 
+                    .link-wrap{
+                        display: block;
+                        text-transform: lowercase;
+                        background-color: @col-sec;
+                        margin: 0 15px 0 75px; 
                    }
                 }
             }
-            /*>:last-child{
-                margin-bottom: 0;
-            }*/
         }
     }
     
@@ -204,10 +197,13 @@
         .logo{
             width:90px;
             margin:0px 15px 20px 0;
-            float: left;
         }
         .footer-links{
-            float: left;
+            margin-left: -50px;
+            li{
+                float: left;
+                margin-left: 50px;
+            }
             a{
                 color: @col-link;
                 display: block;
@@ -236,8 +232,12 @@
             }   
         }
         .disclaimer{
-            display: none;
-        }    
+            display: block;
+            color: @col-text;
+            font-size: 12px;
+            font: 0.750rem arumsansextrabold, Arial, sans-serif;
+            padding-top: 2px;
+        }   
 
     }
 	
@@ -307,30 +307,31 @@
                                 line-height: 160px;
                             }
                         }
-                    }
-                    .child{
-                        .btn-close{
-                            line-height: 1.5em;
-                            font-size: 1.5em;
-                            margin-top: 5px;
-                            margin-right: 5px;
-                            float: right;
-                            display: inline-block;
-                            position: absolute;
-                            top: 0;
-                            right: 5px;
-                            color: #b1b1b0;
-                            cursor: pointer;
-                        }
-                        .content{
-                            padding-left:175px; 
-                            .links{
+                        .link-wrap{
+                            margin-left: 175px;
+                            .btn-close{
+                                line-height: 1.5em;
+                                font-size: 1.5em;
+                                margin-top: 5px;
+                                margin-right: 10px;
+                                float: right;
+                                display: inline-block;
+                                position: absolute;
+                                top: 0;
+                                right: 5px;
+                                color: #b1b1b0;
+                                cursor: pointer;
+                            }
+                            ul{
                                 li{
                                     width: 44%;
                                     margin-right: 6%;
                                     float: left;   
                                 }
-                                
+                                a{
+                                    font-size: 15px;
+                                    font: 0.938rem vectipede_rgregular, Arial, sans-serif;
+                                } 
                             }
                         }
                     }
@@ -339,8 +340,19 @@
             }
         }
         .footer-link-nav{
+            .footer-links{
+                margin-left: -80px;
+                li{
+                    float: left;
+                    margin-left: 80px;
+                }
+            }
             .social-media-list{
-                margin:53px 0 20px -35px;
+                margin-top:55px;
+                float: right;
+            }
+            .disclaimer{
+              float: right;
             } 
                
         }
@@ -357,22 +369,19 @@
         .footer-tab-nav-wrap{
             .footer-tab-nav{
                 .category{
-                    width: 30.105263%;
-                    .child{
-                        .content{
-                            padding-left:210px; 
-                            width: 74%;
-                            .links{
-                                width: 69%;
-                                margin-top: -41px;
-                                float: left;
-                                margin-left: 71.5%;
-                                border-top: 0;
-                                &:before {
-                                    top: 27px;
-                                    left: -28px;
-                                }
-                                
+                    width: 30.206186%;
+                    .link-wrap{
+                        ul{
+                            width: 100%;
+                            float: left;
+                            border-top: 0;
+                            padding-left: 50%;
+                            padding-right: 0;
+                            margin-top: -36px;
+                            &:before {
+                                top: 22px;
+                                right: 50%;
+                                margin-right: 12px;
                             }
                         }
                     }
@@ -412,29 +421,24 @@
             .logo{ 
                 width: 90px;
             }
-
             .social-media-list{
                 margin-bottom: 0;
                 float: right;
-            }
-            .disclaimer{
-                display: block;
-                color: @col-text;
-                font-size: 12px;
-                font: 0.750rem arumsansextrabold, Arial, sans-serif;
-                float: right;
-                padding-top: 2px;
             }
             .logo{
                 float: none;
             }
             .footer-links{
-                margin-left: -30px;
+              margin-left: -30px;
                 li{
                     float: left;
                     margin-left: 30px;
-                }
-            }    
+                }   
+            }
+            .disclaimer{
+                float: right;
+            } 
+              
         }
     }
 }

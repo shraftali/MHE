@@ -99,7 +99,7 @@
     background-color: #edebdc;
     /*border-bottom: 1px solid #999;
     font-weight: bold;*/
-    padding: 8px 0 8px 10px;
+    padding: 8px 0;
     color: #32494d;
     width: 100%;
   }
@@ -156,11 +156,10 @@
 
 .dk_options {
   display: none;
-  margin-top: -1px;
   position: absolute;
   right: 0;
   width: auto;
-  border-radius: 0;
+  border-radius: 0; 
 }
   .dk_options a, .dk_options a:link, .dk_options a:visited {
     display: block; 
@@ -169,10 +168,18 @@
 .dk_options_inner {
   overflow: hidden;
   position: relative;
-  border-top: 1px solid #fff;
   margin:0 0 0 0; 
   -webkit-overflow-scrolling: touch;
-  background-color: #edebdc; }
+  background-color: #edebdc;
+
+  &:before{
+    content: '';
+    border-top: 1px solid #fff;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
 
 .dk_container select {
    position: absolute;
